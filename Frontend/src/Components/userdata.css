@@ -1,0 +1,49 @@
+@keyframes fadeInOut {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.work-in-progress {
+  position: fixed;
+  top: 59px;
+  right: 2px;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  border: 3px solid #000000;
+  height: 620px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.work-in-progress::before {
+  content: "Work in Process: Developing the AI-powered 3D model";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);  /* semi-transparent black background */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  animation: fadeInOut 2s infinite;
+}
+
+.image {
+  width: 300px;
+  z-index: 0;  /* Ensure the image stays below the overlay */
+}
+
+.text {
+  font-size: small;
+  text-align: center;
+  z-index: 2;  /* Ensure the text stays above the overlay */
+}
