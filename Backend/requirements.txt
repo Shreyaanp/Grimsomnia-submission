@@ -6,6 +6,6 @@ pypdf
 python-dotenv
 transformers
 requests
-llama-cpp-python
 llama-index
 sentence-transformers
+python-multipart
