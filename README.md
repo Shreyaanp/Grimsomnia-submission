@@ -13,6 +13,7 @@ To run the frontend:
 To run the backend:
 1. Open a terminal and navigate to the backend folder.
 2. Run the command "pip install -r requirements.txt" to install all the dependencies.
+3. Run the command "python3 GPU_engine-CUBLAS.py" to install the acceleration engine. This is in case of NVIDIA GPU and on Linux.
 3. Run the command "python3 main.py" to start the application.
 4. The application should now be running on localhost:5000.
 
